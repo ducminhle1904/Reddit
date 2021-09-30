@@ -16,7 +16,7 @@ enum VoteTypeValue {
   Downvote = -1,
 }
 
-function UpvoteSection({ post }: UpvoteSectionProps) {
+function UpvoteSection(this: any, { post }: UpvoteSectionProps) {
   const [vote, { loading }] = useVoteMutation();
   const [loadingState, setLoadingState] = useState<
     "upvote-loading" | "downvote-loading" | "not-loading"
