@@ -26,7 +26,7 @@ import { useCheckAuth } from "../utils/useCheckAuth";
 function ChangePassword() {
   const { query } = useRouter();
   const initialValues = { newPassword: "" };
-  const [changePassword, { loading }] = useChangePasswordMutation();
+  const [changePassword, _] = useChangePasswordMutation();
   const [tokenError, setTokenError] = useState("");
   const { data: authData, loading: authLoading } = useCheckAuth();
   const onChangePasswordSubmit = async (
