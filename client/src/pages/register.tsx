@@ -24,7 +24,7 @@ function Register() {
     password: "",
   };
 
-  const [registerUser, { data, loading: _registerUserLoading, error }] =
+  const [registerUser, { loading: _registerUserLoading, error }] =
     useRegisterMutation();
 
   const onRegisterSubmit = async (
