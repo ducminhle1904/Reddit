@@ -5,7 +5,6 @@ import {
   Box,
   Button,
   Flex,
-  Link,
   Spinner,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
