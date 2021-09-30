@@ -13,7 +13,9 @@ interface PostEditDeleteButtonProps {
   postId: string;
   postUserId: string;
 }
-function PostEditDeleteButton({
+function PostEditDeleteButton(
+this: any,
+{
   postId,
   postUserId,
 }: PostEditDeleteButtonProps) {
