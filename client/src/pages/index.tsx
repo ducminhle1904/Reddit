@@ -14,12 +14,12 @@ import NextLink from "next/link";
 import Layout from "../components/Layout";
 import PostEditDeleteButton from "../components/PostEditDeleteButton";
 import UpvoteSection from "../components/UpvoteSection";
-import { PostsDocument, useMeQuery, usePostsQuery } from "../generated/graphql";
+import { PostsDocument, usePostsQuery } from "../generated/graphql";
 import { addApolloState, initializeApollo } from "../lib/apolloClient";
 
 export const limit = 2;
 const Index = () => {
-  const { data: meData } = useMeQuery();
+  
   const { data, loading, fetchMore, networkStatus } = usePostsQuery({
     variables: { limit },
 
